@@ -169,5 +169,5 @@ C:\Users\PECE\Documents\GITPROJECTS\praktika\PRAKTOSWEBAPI\obj\Debug\net9.0\PRAK
 C:\Users\PECE\Documents\GITPROJECTS\praktika\PRAKTOSWEBAPI\obj\Debug\net9.0\PRAKTOSWEBAPI.RazorAssemblyInfo.cs
 C:\Users\PECE\Documents\GITPROJECTS\praktika\PRAKTOSWEBAPI\obj\Debug\net9.0\PRAKTOSWEBAPI.sourcelink.json
 C:\Users\PECE\Documents\GITPROJECTS\praktika\PRAKTOSWEBAPI\bin\Debug\net9.0\PRAKTOSWEBAPI.staticwebassets.runtime.json
-C:\Users\PECE\Documents\GITPROJECTS\praktika\PRAKTOSWEBAPI\obj\Debug\net9.0\compressed\wcgxygmehx-c8tfd2fg2f.gz
-C:\Users\PECE\Documents\GITPROJECTS\praktika\PRAKTOSWEBAPI\obj\Debug\net9.0\compressed\i8ffzg0yip-ti1cy2s9k8.gz
+C:\Users\PECE\Documents\GITPROJECTS\praktika\PRAKTOSWEBAPI\obj\Debug\net9.0\compressed\wcgxygmehx-g2rvzce8cd.gz
+C:\Users\PECE\Documents\GITPROJECTS\praktika\PRAKTOSWEBAPI\obj\Debug\net9.0\compressed\i8ffzg0yip-gnr0jyviwl.gz

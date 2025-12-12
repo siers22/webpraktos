@@ -33,6 +33,22 @@
   },
   {
     "ContainingType": "PRAKTOSWEBAPI.Controllers.TelegramBotController",
+    "Method": "SetupWebhook",
+    "RelativePath": "api/TelegramBot/setup-webhook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "url",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PRAKTOSWEBAPI.Controllers.TelegramBotController",
     "Method": "Webhook",
     "RelativePath": "api/TelegramBot/webhook",
     "HttpMethod": "POST",

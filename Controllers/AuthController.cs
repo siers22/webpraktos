@@ -8,6 +8,7 @@ using PRAKTOSWEBAPI.Data;
 using PRAKTOSWEBAPI.Models;
 using PRAKTOSWEBAPI.Services;
 using BCrypt.Net;
+using Microsoft.AspNetCore.Authentication;
 
 namespace PRAKTOSWEBAPI.Controllers
 {
@@ -108,24 +109,41 @@ namespace PRAKTOSWEBAPI.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginModel model)
         {
-            // Можно войти по Username или по TelegramId
-            var user = await _context.Users.FirstOrDefaultAsync(u => 
+            var user = await _context.Users.FirstOrDefaultAsync(u =>
                 u.Username == model.Username || u.TelegramId.ToString() == model.Username);
-            
+
             if (user == null || !BCrypt.Net.BCrypt.Verify(model.Password, user.PasswordHash))
                 return Unauthorized();
 
-            // Проверяем, подтверждена ли регистрация
             if (!user.IsConfirmed)
             {
-                return BadRequest(new { 
+                return BadRequest(new
+                {
                     error = "Registration not confirmed",
                     message = "Регистрация не подтверждена. Напишите боту в Telegram для подтверждения."
                 });
             }
 
+            // ВОТ ЭТО ГЛАВНОЕ — ДЕЛАЕМ АВТОРИЗАЦИЮ ЧЕРЕЗ COOKIE!
+            var claims = new List<Claim>
+    {
+        new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+        new Claim(ClaimTypes.Name, user.Username),
+        new Claim(ClaimTypes.Role, user.Role)
+    };
+
+            var identity = new ClaimsIdentity(claims, "Cookies"); // важно: схема "Cookies"
+            var principal = new ClaimsPrincipal(identity);
+
+            await HttpContext.SignInAsync("Cookies", principal, new AuthenticationProperties
+            {
+                IsPersistent = true,
+                ExpiresUtc = DateTimeOffset.UtcNow.AddHours(8)
+            });
+
+            // По желанию — всё ещё можешь отдавать JWT для API
             var token = GenerateJwtToken(user);
-            return Ok(new { Token = token });
+            return Ok(new { Token = token, Message = "Login successful" });
         }
 
         private string GenerateJwtToken(User user)

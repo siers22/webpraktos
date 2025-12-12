@@ -105,3 +105,4 @@ https://api.telegram.org/bot<ВАШ_BOT_TOKEN>/setWebhook?url=https://abc123.ngr
 - Убедитесь, что Telegram ID в базе данных совпадает с ID пользователя в Telegram
 - Проверьте, что пользователь не был подтвержден ранее (`IsConfirmed = false`)
 
+

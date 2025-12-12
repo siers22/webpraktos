@@ -34,12 +34,11 @@
                             <a asp-page="/Admin/Users" class="nav-link"><i class="fas fa-users"></i> Пользователи</a>
                         }
                         <div class="nav-user">
-                            <span><i class="fas fa-user-circle"></i> @User.Identity.Name</span>
-                            <form method="post" asp-page="/Account/Logout" style="display: inline;">
-                                <button type="submit" class="nav-link" style="background: none; border: none; color: var(--text-primary); cursor: pointer; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.3s;">
-                                    <i class="fas fa-sign-out-alt"></i> Выход
-                                </button>
-                            </form>
+                            <span><i class="fas fa-user-circle"></i> @User.Identity?.Name</span>
+                            <a asp-page="/Account/Logout" class="nav-link"
+                               style="background:none;border:none;color:var(--text-primary);cursor:pointer;padding:0.5rem 1rem;">
+                                Выход
+                            </a>
                         </div>
                     }
                     else

@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
@@ -21,23 +22,21 @@ builder.Services.AddOpenApi();
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultScheme = "Cookies";
-    options.DefaultChallengeScheme = "Cookies";
+    //options.DefaultChallengeScheme = "Cookies";
 })
 .AddCookie("Cookies", options =>
 {
     options.LoginPath = "/Account/Login";
     options.LogoutPath = "/Account/Logout";
     options.AccessDeniedPath = "/Account/AccessDenied";
+
     options.ExpireTimeSpan = TimeSpan.FromHours(8);
     options.SlidingExpiration = true;
+
     options.Cookie.HttpOnly = true;
-    options.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest;
+    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;  
     options.Cookie.SameSite = SameSiteMode.Lax;
-    // Убеждаемся, что cookie удаляется при выходе
-    options.Events.OnSigningOut = async context =>
-    {
-        context.CookieOptions.Expires = DateTimeOffset.UtcNow.AddDays(-1);
-    };
+    options.Cookie.Name = ".AspNetCore.Cookies"; 
 })
 .AddJwtBearer("Bearer", options => {
     options.TokenValidationParameters = new TokenValidationParameters
@@ -76,5 +75,10 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 app.MapControllers();
-
+app.MapGet("/Account/Logout", async context =>
+{
+    context.Response.Cookies.Delete(".AspNetCore.Cookies");
+    await context.SignOutAsync("Cookies");
+    context.Response.Redirect("/");
+});
 app.Run();
