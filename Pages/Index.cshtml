@@ -1,0 +1,47 @@
+@page
+@model IndexModel
+@inject IConfiguration Configuration
+@{
+    ViewData["Title"] = "Главная";
+}
+
+<div class="card">
+    <div class="card-header">
+        <i class="fas fa-home"></i> Добро пожаловать в систему поступления
+    </div>
+    <div>
+        <p>Система для подачи заявок на поступление в учебное заведение.</p>
+        @if (User.Identity?.IsAuthenticated != true)
+        {
+            <div style="margin-top: 2rem;">
+                <a asp-page="/Account/Register" class="btn btn-primary">
+                    <i class="fas fa-user-plus"></i> Подать заявку на поступление
+                </a>
+                <a asp-page="/Account/Login" class="btn btn-secondary" style="margin-left: 1rem;">
+                    <i class="fas fa-sign-in-alt"></i> Войти в систему
+                </a>
+            </div>
+            <div style="margin-top: 2rem; padding: 1rem; background-color: var(--bg-tertiary); border-radius: 4px;">
+                <h3><i class="fab fa-telegram"></i> Подтверждение через Telegram</h3>
+                <p>После подачи заявки вам необходимо подтвердить регистрацию, написав боту в Telegram.</p>
+                <a href="@(Configuration["Telegram:BotUrl"] ?? "https://t.me/your_bot")" target="_blank" class="telegram-link" style="margin-top: 1rem; display: inline-block;">
+                    <i class="fab fa-telegram"></i> Перейти к Telegram боту
+                </a>
+            </div>
+        }
+        else
+        {
+            <div style="margin-top: 2rem;">
+                <p>Вы вошли как: <strong>@User.Identity.Name</strong></p>
+                <p>Роль: <strong>@(User.IsInRole("Admin") ? "Администратор" : User.IsInRole("Manager") ? "Менеджер" : "Студент")</strong></p>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Page-specific scripts
+    </script>
+}
+

@@ -1,0 +1,105 @@
+@page
+@model PRAKTOSWEBAPI.Pages.Admin.DashboardModel
+@{
+    ViewData["Title"] = "Панель администратора";
+}
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+    <div class="card">
+        <div class="card-header">
+            <i class="fas fa-users"></i> Всего пользователей
+        </div>
+        <div style="font-size: 2rem; font-weight: bold; color: var(--accent);">
+            @Model.TotalUsers
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-header">
+            <i class="fas fa-file-alt"></i> Всего заявок
+        </div>
+        <div style="font-size: 2rem; font-weight: bold; color: var(--accent);">
+            @Model.TotalApplications
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-header">
+            <i class="fas fa-check-circle"></i> Одобрено
+        </div>
+        <div style="font-size: 2rem; font-weight: bold; color: var(--success);">
+            @Model.ApprovedApplications
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-header">
+            <i class="fas fa-book"></i> Специальностей
+        </div>
+        <div style="font-size: 2rem; font-weight: bold; color: var(--accent);">
+            @Model.TotalSpecialties
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <i class="fas fa-chart-line"></i> Статистика по специальностям
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Специальность</th>
+                    <th>Количество заявок</th>
+                    <th>Одобрено</th>
+                    <th>На рассмотрении</th>
+                    <th>Отклонено</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var stat in Model.SpecialtyStats)
+                {
+                    <tr>
+                        <td>@stat.SpecialtyName</td>
+                        <td>@stat.Total</td>
+                        <td><span class="badge badge-success">@stat.Approved</span></td>
+                        <td><span class="badge badge-warning">@stat.Pending</span></td>
+                        <td><span class="badge badge-danger">@stat.Rejected</span></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem;">
+    <div class="card">
+        <div class="card-header">
+            <i class="fas fa-link"></i> Быстрые ссылки
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <a asp-page="/Manager/Applications" class="btn btn-primary">
+                <i class="fas fa-file-alt"></i> Управление заявками
+            </a>
+            <a asp-page="/Manager/Specialties" class="btn btn-primary">
+                <i class="fas fa-book"></i> Управление специальностями
+            </a>
+            <a asp-page="/Admin/Users" class="btn btn-primary">
+                <i class="fas fa-users"></i> Управление пользователями
+            </a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-header">
+            <i class="fas fa-info-circle"></i> Системная информация
+        </div>
+        <div>
+            <p><strong>Версия системы:</strong> 1.0.0</p>
+            <p><strong>База данных:</strong> PostgreSQL</p>
+            <p><strong>Последнее обновление:</strong> @DateTime.Now.ToString("dd.MM.yyyy HH:mm")</p>
+        </div>
+    </div>
+</div>
+

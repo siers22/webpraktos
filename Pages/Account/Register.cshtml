@@ -1,0 +1,124 @@
+@page
+@model PRAKTOSWEBAPI.Pages.Account.RegisterModel
+@inject IConfiguration Configuration
+@{
+    ViewData["Title"] = "Регистрация";
+}
+
+<div class="card" style="max-width: 600px; margin: 2rem auto;">
+    <div class="card-header">
+        <i class="fas fa-user-plus"></i> Подача заявки на поступление
+    </div>
+    
+    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+    {
+        <div class="alert alert-error">
+            <i class="fas fa-exclamation-circle"></i> @Model.ErrorMessage
+        </div>
+    }
+    
+    @if (!string.IsNullOrEmpty(Model.SuccessMessage))
+    {
+        <div class="alert alert-success">
+            <i class="fas fa-check-circle"></i> @Model.SuccessMessage
+        </div>
+        <div style="margin-top: 1rem; padding: 1rem; background-color: var(--bg-tertiary); border-radius: 4px;">
+            <p><strong>Важно!</strong> Для завершения регистрации необходимо подтвердить заявку через Telegram бота.</p>
+            <a href="@(Configuration["Telegram:BotUrl"] ?? "https://t.me/your_bot")" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+                <i class="fab fa-telegram"></i> Перейти к Telegram боту
+            </a>
+        </div>
+    }
+    else
+    {
+        <form method="post" id="registerForm">
+            <div class="form-group">
+                <label class="form-label">Telegram ID *</label>
+                <input type="number" class="form-control" asp-for="Input.TelegramId" required placeholder="Ваш Telegram ID" />
+                <small style="color: var(--text-secondary);">Узнать свой Telegram ID можно у бота @@userinfobot</small>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Логин *</label>
+                <input type="text" class="form-control" asp-for="Input.Username" required placeholder="Придумайте логин" />
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Пароль *</label>
+                <input type="password" class="form-control" asp-for="Input.Password" required placeholder="Придумайте пароль" />
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">ФИО *</label>
+                <input type="text" class="form-control" asp-for="Input.FullName" required placeholder="Иванов Иван Иванович" />
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Номер паспорта *</label>
+                <input type="text" class="form-control" asp-for="Input.PassportNumber" required placeholder="1234 567890" />
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Уровень образования *</label>
+                <select class="form-control" asp-for="Input.EducationLevel" required>
+                    <option value="">Выберите...</option>
+                    <option value="Среднее общее">Среднее общее</option>
+                    <option value="Среднее профессиональное">Среднее профессиональное</option>
+                    <option value="Высшее">Высшее</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Специальность *</label>
+                <select class="form-control" asp-for="Input.SpecialtyId" required>
+                    <option value="">Выберите специальность...</option>
+                    @foreach (var specialty in Model.Specialties)
+                    {
+                        <option value="@specialty.Id">@specialty.Name</option>
+                    }
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Оценки (от 0 до 5) *</label>
+                <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem;">
+                    <div>
+                        <label style="font-size: 0.875rem;">Оценка 1</label>
+                        <input type="number" class="form-control" asp-for="Input.Grade1" min="0" max="5" required />
+                    </div>
+                    <div>
+                        <label style="font-size: 0.875rem;">Оценка 2</label>
+                        <input type="number" class="form-control" asp-for="Input.Grade2" min="0" max="5" required />
+                    </div>
+                    <div>
+                        <label style="font-size: 0.875rem;">Оценка 3</label>
+                        <input type="number" class="form-control" asp-for="Input.Grade3" min="0" max="5" required />
+                    </div>
+                    <div>
+                        <label style="font-size: 0.875rem;">Оценка 4</label>
+                        <input type="number" class="form-control" asp-for="Input.Grade4" min="0" max="5" required />
+                    </div>
+                    <div>
+                        <label style="font-size: 0.875rem;">Оценка 5</label>
+                        <input type="number" class="form-control" asp-for="Input.Grade5" min="0" max="5" required />
+                    </div>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <i class="fas fa-paper-plane"></i> Подать заявку
+            </button>
+        </form>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById('registerForm')?.addEventListener('submit', function(e) {
+            if (!validateForm('registerForm')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+}
+

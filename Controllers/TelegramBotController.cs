@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PRAKTOSWEBAPI.Data;
@@ -22,6 +23,7 @@ namespace PRAKTOSWEBAPI.Controllers
         }
 
         [HttpPost("webhook")]
+        [AllowAnonymous] // Webhook должен быть доступен без авторизации
         public async Task<IActionResult> Webhook([FromBody] TelegramUpdate update)
         {
             if (update?.Message == null)
@@ -34,6 +36,16 @@ namespace PRAKTOSWEBAPI.Controllers
             // Игнорируем сообщения от ботов
             if (update.Message.From?.IsBot == true)
                 return Ok();
+
+            // Обработка команды /start
+            if (messageText.Equals("/start", StringComparison.OrdinalIgnoreCase))
+            {
+                await _telegramService.SendMessage(chatId, 
+                    "👋 Добро пожаловать!\n\n" +
+                    "Этот бот используется для подтверждения регистрации в системе поступления.\n\n" +
+                    "Если вы подали заявку на сайте, просто напишите любое сообщение боту для подтверждения регистрации.");
+                return Ok();
+            }
 
             try
             {
@@ -83,6 +95,54 @@ namespace PRAKTOSWEBAPI.Controllers
                 return Ok(); // Всегда возвращаем 200, чтобы Telegram не повторял запрос
             }
         }
+
+        [HttpPost("setup-webhook")]
+        [AllowAnonymous]
+        public async Task<IActionResult> SetupWebhook([FromQuery] string? url = null)
+        {
+            try
+            {
+                var botToken = _configuration["Telegram:BotToken"];
+                if (string.IsNullOrEmpty(botToken))
+                {
+                    return BadRequest("BotToken не настроен в appsettings.json");
+                }
+
+                // Если URL не указан, используем текущий домен
+                if (string.IsNullOrEmpty(url))
+                {
+                    var scheme = Request.Scheme;
+                    var host = Request.Host;
+                    url = $"{scheme}://{host}/api/telegrambot/webhook";
+                }
+
+                var webhookUrl = $"https://api.telegram.org/bot{botToken}/setWebhook?url={Uri.EscapeDataString(url)}";
+                
+                using var httpClient = new HttpClient();
+                var response = await httpClient.GetAsync(webhookUrl);
+                var content = await response.Content.ReadAsStringAsync();
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return Ok(new { 
+                        message = "Webhook успешно настроен", 
+                        url = url,
+                        response = content 
+                    });
+                }
+                else
+                {
+                    return BadRequest(new { 
+                        message = "Ошибка настройки webhook", 
+                        response = content 
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = ex.Message });
+            }
+        }
     }
 
     // Модели для десериализации Telegram Update
@@ -117,4 +177,3 @@ namespace PRAKTOSWEBAPI.Controllers
         public string? Username { get; set; }
     }
 }
-

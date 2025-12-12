@@ -1,0 +1,89 @@
+@page
+@model PRAKTOSWEBAPI.Pages.Student.ProfileModel
+@inject IConfiguration Configuration
+@{
+    ViewData["Title"] = "Мой профиль";
+}
+
+<div class="card">
+    <div class="card-header">
+        <i class="fas fa-user"></i> Мой профиль
+    </div>
+    
+    @if (Model.Applicant != null && Model.CurrentUser != null)
+    {
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+            <div>
+                <h3 style="margin-bottom: 1rem; color: var(--accent);">Личная информация</h3>
+                <div class="form-group">
+                    <label class="form-label">ФИО</label>
+                    <input type="text" class="form-control" value="@Model.Applicant.FullName" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Номер паспорта</label>
+                    <input type="text" class="form-control" value="@Model.Applicant.PassportNumber" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Уровень образования</label>
+                    <input type="text" class="form-control" value="@Model.Applicant.EducationLevel" readonly />
+                </div>
+            </div>
+            
+            <div>
+                <h3 style="margin-bottom: 1rem; color: var(--accent);">Академическая информация</h3>
+                <div class="form-group">
+                    <label class="form-label">Специальность</label>
+                    <input type="text" class="form-control" value="@Model.Applicant.Specialty?.Name" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Средний балл</label>
+                    <input type="text" class="form-control" value="@Model.Applicant.AverageScore.ToString("F2")" readonly style="font-weight: bold; font-size: 1.2rem;" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Оценки</label>
+                    <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.5rem;">
+                        <input type="text" class="form-control" value="@Model.Applicant.Grade1" readonly />
+                        <input type="text" class="form-control" value="@Model.Applicant.Grade2" readonly />
+                        <input type="text" class="form-control" value="@Model.Applicant.Grade3" readonly />
+                        <input type="text" class="form-control" value="@Model.Applicant.Grade4" readonly />
+                        <input type="text" class="form-control" value="@Model.Applicant.Grade5" readonly />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Статус заявки</label>
+                    <div>
+                        <span class="badge @(Model.Application?.Status == "Approved" ? "badge-success" : Model.Application?.Status == "Rejected" ? "badge-danger" : "badge-warning")">
+                            @(Model.Application?.Status == "Approved" ? "Одобрено" : Model.Application?.Status == "Rejected" ? "Отклонено" : "На рассмотрении")
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="margin-top: 2rem; padding: 1rem; background-color: var(--bg-tertiary); border-radius: 4px;">
+            <h4><i class="fab fa-telegram"></i> Telegram</h4>
+            <p>Telegram ID: <strong>@Model.CurrentUser.TelegramId</strong></p>
+            <p>Статус подтверждения: 
+                @if (Model.CurrentUser.IsConfirmed)
+                {
+                    <span class="badge badge-success">Подтверждено</span>
+                }
+                else
+                {
+                    <span class="badge badge-warning">Не подтверждено</span>
+                    <p style="margin-top: 0.5rem;">Подтвердите регистрацию через Telegram бота:</p>
+                    <a href="@(Configuration["Telegram:BotUrl"] ?? "https://t.me/your_bot")" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-telegram"></i> Перейти к боту
+                    </a>
+                }
+            </p>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-warning">
+            <i class="fas fa-exclamation-triangle"></i> Профиль не найден
+        </div>
+    }
+</div>
+

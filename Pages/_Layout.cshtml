@@ -1,0 +1,75 @@
+@inject IConfiguration Configuration
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Система поступления</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a class="nav-brand" asp-page="/Index">
+                    <i class="fas fa-graduation-cap"></i> Система поступления
+                </a>
+                <div class="nav-menu">
+                    @if (User.Identity?.IsAuthenticated == true)
+                    {
+                        @if (User.IsInRole("Applicant"))
+                        {
+                            <a asp-page="/Student/Rating" class="nav-link"><i class="fas fa-trophy"></i> Рейтинг</a>
+                            <a asp-page="/Student/Profile" class="nav-link"><i class="fas fa-user"></i> Профиль</a>
+                        }
+                        @if (User.IsInRole("Manager") || User.IsInRole("Admin"))
+                        {
+                            <a asp-page="/Manager/Applications" class="nav-link"><i class="fas fa-file-alt"></i> Заявки</a>
+                            <a asp-page="/Manager/Specialties" class="nav-link"><i class="fas fa-book"></i> Специальности</a>
+                        }
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <a asp-page="/Admin/Dashboard" class="nav-link"><i class="fas fa-chart-line"></i> Статистика</a>
+                            <a asp-page="/Admin/Users" class="nav-link"><i class="fas fa-users"></i> Пользователи</a>
+                        }
+                        <div class="nav-user">
+                            <span><i class="fas fa-user-circle"></i> @User.Identity.Name</span>
+                            <form method="post" asp-page="/Account/Logout" style="display: inline;">
+                                <button type="submit" class="nav-link" style="background: none; border: none; color: var(--text-primary); cursor: pointer; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.3s;">
+                                    <i class="fas fa-sign-out-alt"></i> Выход
+                                </button>
+                            </form>
+                        </div>
+                    }
+                    else
+                    {
+                        <a asp-page="/Account/Login" class="nav-link"><i class="fas fa-sign-in-alt"></i> Вход</a>
+                        <a asp-page="/Account/Register" class="nav-link btn-primary"><i class="fas fa-user-plus"></i> Регистрация</a>
+                    }
+                    <button class="theme-toggle" id="themeToggle" title="Переключить тему">
+                        <i class="fas fa-moon" id="themeIcon"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        @RenderBody()
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Система поступления. Все права защищены.</p>
+            <a href="@(Configuration["Telegram:BotUrl"] ?? "https://t.me/your_bot")" target="_blank" class="telegram-link">
+                <i class="fab fa-telegram"></i> Telegram бот
+            </a>
+        </div>
+    </footer>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+

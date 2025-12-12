@@ -1,0 +1,18 @@
+@page
+@model PRAKTOSWEBAPI.Pages.Account.AccessDeniedModel
+@{
+    ViewData["Title"] = "Доступ запрещен";
+}
+
+<div class="card" style="max-width: 500px; margin: 2rem auto; text-align: center;">
+    <div class="card-header">
+        <i class="fas fa-ban"></i> Доступ запрещен
+    </div>
+    <div>
+        <p style="font-size: 1.2rem; margin: 1rem 0;">У вас нет доступа к этой странице.</p>
+        <a asp-page="/Index" class="btn btn-primary">
+            <i class="fas fa-home"></i> Вернуться на главную
+        </a>
+    </div>
+</div>
+

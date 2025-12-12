@@ -1,0 +1,72 @@
+@page
+@model PRAKTOSWEBAPI.Pages.Admin.CreateUserModel
+@{
+    ViewData["Title"] = "Создать пользователя";
+}
+
+<div class="card" style="max-width: 500px; margin: 2rem auto;">
+    <div class="card-header">
+        <i class="fas fa-user-plus"></i> Создать пользователя (Админ/Менеджер)
+    </div>
+    
+    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+    {
+        <div class="alert alert-error">
+            <i class="fas fa-exclamation-circle"></i> @Model.ErrorMessage
+        </div>
+    }
+    
+    @if (!string.IsNullOrEmpty(Model.SuccessMessage))
+    {
+        <div class="alert alert-success">
+            <i class="fas fa-check-circle"></i> @Model.SuccessMessage
+        </div>
+    }
+    
+    <form method="post" id="createUserForm">
+        <div class="form-group">
+            <label class="form-label">Telegram ID *</label>
+            <input type="number" class="form-control" asp-for="Input.TelegramId" required placeholder="Telegram ID" />
+        </div>
+        
+        <div class="form-group">
+            <label class="form-label">Логин *</label>
+            <input type="text" class="form-control" asp-for="Input.Username" required placeholder="Логин" />
+        </div>
+        
+        <div class="form-group">
+            <label class="form-label">Пароль *</label>
+            <input type="password" class="form-control" asp-for="Input.Password" required placeholder="Пароль" />
+        </div>
+        
+        <div class="form-group">
+            <label class="form-label">Роль *</label>
+            <select class="form-control" asp-for="Input.Role" required>
+                <option value="">Выберите роль...</option>
+                <option value="Admin">Администратор</option>
+                <option value="Manager">Менеджер</option>
+            </select>
+        </div>
+        
+        <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <i class="fas fa-user-plus"></i> Создать пользователя
+        </button>
+    </form>
+    
+    <div style="margin-top: 1.5rem;">
+        <a asp-page="/Admin/Users" class="btn btn-secondary">
+            <i class="fas fa-arrow-left"></i> Назад к списку пользователей
+        </a>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById('createUserForm')?.addEventListener('submit', function(e) {
+            if (!validateForm('createUserForm')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+}
+

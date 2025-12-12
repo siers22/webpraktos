@@ -165,4 +165,9 @@ C:\Users\PECE\Documents\GITPROJECTS\praktika\PRAKTOSWEBAPI\bin\Debug\net9.0\BCry
 C:\Users\PECE\Documents\GITPROJECTS\praktika\PRAKTOSWEBAPI\bin\Debug\net9.0\Npgsql.dll
 C:\Users\PECE\Documents\GITPROJECTS\praktika\PRAKTOSWEBAPI\bin\Debug\net9.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\PECE\Documents\GITPROJECTS\praktika\PRAKTOSWEBAPI\bin\Debug\net9.0\Telegram.Bot.dll
-C:\Users\PECE\Documents\GITPROJECTS\praktika\PRAKTOSWEBAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\PECE\Documents\GITPROJECTS\praktika\PRAKTOSWEBAPI\obj\Debug\net9.0\PRAKTOSWEBAPI.RazorAssemblyInfo.cache
+C:\Users\PECE\Documents\GITPROJECTS\praktika\PRAKTOSWEBAPI\obj\Debug\net9.0\PRAKTOSWEBAPI.RazorAssemblyInfo.cs
+C:\Users\PECE\Documents\GITPROJECTS\praktika\PRAKTOSWEBAPI\obj\Debug\net9.0\PRAKTOSWEBAPI.sourcelink.json
+C:\Users\PECE\Documents\GITPROJECTS\praktika\PRAKTOSWEBAPI\bin\Debug\net9.0\PRAKTOSWEBAPI.staticwebassets.runtime.json
+C:\Users\PECE\Documents\GITPROJECTS\praktika\PRAKTOSWEBAPI\obj\Debug\net9.0\compressed\wcgxygmehx-c8tfd2fg2f.gz
+C:\Users\PECE\Documents\GITPROJECTS\praktika\PRAKTOSWEBAPI\obj\Debug\net9.0\compressed\i8ffzg0yip-ti1cy2s9k8.gz
