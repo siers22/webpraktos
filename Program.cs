@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using PRAKTOSWEBAPI.Data;
+using PRAKTOSWEBAPI.Hubs;
 using PRAKTOSWEBAPI.Services;
 using System.Text;
 
@@ -13,6 +14,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddControllers();
+builder.Services.AddSignalR();
 builder.Services.AddRazorPages();
 builder.Services.AddSession(); // Добавляем поддержку сессий
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
@@ -53,10 +55,14 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("Student", policy => policy.RequireRole("Applicant"));
     options.AddPolicy("Manager", policy => policy.RequireRole("Manager"));
     options.AddPolicy("Admin", policy => policy.RequireRole("Admin"));
+    options.AddPolicy("ManagerOrAdmin", policy =>
+        policy.RequireRole("Manager", "Admin"));
 });
 builder.Services.AddHttpClient();
 builder.Services.AddTransient<IEmailService, EmailService>();
 builder.Services.AddTransient<ITelegramService, TelegramService>();
+
+
 
 var app = builder.Build();
 
@@ -72,7 +78,7 @@ app.UseStaticFiles();
 app.UseSession(); // Используем сессии
 app.UseAuthentication();
 app.UseAuthorization();
-
+app.MapHub<TelegramHub>("/telegramhub");
 app.MapRazorPages();
 app.MapControllers();
 app.MapGet("/Account/Logout", async context =>

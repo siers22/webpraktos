@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
@@ -21,16 +22,51 @@ namespace PRAKTOSWEBAPI.Pages.Student
         public User? CurrentUser { get; set; }
         public Application? Application { get; set; }
 
+        //public async Task OnGetAsync()
+        //{
+        //    var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier) ?? "0");
+
+        //    CurrentUser = await _context.Users.FindAsync(userId);
+        //    Applicant = await _context.Applicants
+        //        .Include(a => a.Specialty)
+        //        .FirstOrDefaultAsync(a => a.UserId == userId);
+        //    Application = await _context.Applications
+        //        .FirstOrDefaultAsync(a => a.ApplicantId == Applicant!.Id);
+        //}
+
         public async Task OnGetAsync()
         {
-            var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier) ?? "0");
-            
+            // НАДЁЖНОЕ получение userId — даже если Claim'ов нет
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)
+                           ?? User.FindFirst("sub")
+                           ?? User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier);
+
+            if (userIdClaim == null || !int.TryParse(userIdClaim.Value, out int userId))
+            {
+                // Если вообще нет ID — пиздец, кидаем на логин
+                RedirectToPage("/Account/Login");
+                return;
+            }
+
             CurrentUser = await _context.Users.FindAsync(userId);
+
+            if (CurrentUser == null)
+            {
+                // Пользователь не найден — выкидываем
+                await HttpContext.SignOutAsync("Cookies");
+                RedirectToPage("/Account/Login");
+                return;
+            }
+
             Applicant = await _context.Applicants
                 .Include(a => a.Specialty)
                 .FirstOrDefaultAsync(a => a.UserId == userId);
-            Application = await _context.Applications
-                .FirstOrDefaultAsync(a => a.ApplicantId == Applicant!.Id);
+
+            if (Applicant != null)
+            {
+                Application = await _context.Applications
+                    .FirstOrDefaultAsync(a => a.ApplicantId == Applicant.Id);
+            }
         }
     }
 }

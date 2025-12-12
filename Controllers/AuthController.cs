@@ -130,6 +130,7 @@ namespace PRAKTOSWEBAPI.Controllers
         new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
         new Claim(ClaimTypes.Name, user.Username),
         new Claim(ClaimTypes.Role, user.Role)
+
     };
 
             var identity = new ClaimsIdentity(claims, "Cookies"); // важно: схема "Cookies"

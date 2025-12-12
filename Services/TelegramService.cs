@@ -5,6 +5,7 @@ namespace PRAKTOSWEBAPI.Services
 {
     public class TelegramService : ITelegramService
     {
+        public event Func<long, Task>? RegistrationConfirmed;
         private readonly string _botToken;
         private readonly HttpClient _httpClient;
 
@@ -39,6 +40,11 @@ namespace PRAKTOSWEBAPI.Services
                 Console.WriteLine($"Ошибка отправки Telegram сообщения пользователю {telegramId}: {ex.Message}");
                 throw; // Пробрасываем дальше, чтобы контроллер мог обработать
             }
+        }
+        public async Task NotifyRegistrationConfirmed(long telegramId)
+        {
+            if (RegistrationConfirmed != null)
+                await RegistrationConfirmed.Invoke(telegramId);
         }
     }
 }

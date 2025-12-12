@@ -7,7 +7,7 @@ using PRAKTOSWEBAPI.Models;
 
 namespace PRAKTOSWEBAPI.Pages.Manager
 {
-    [Authorize(Policy = "Manager")]
+    [Authorize(Policy = "ManagerOrAdmin")]
     public class SpecialtiesModel : PageModel
     {
         private readonly ApplicationDbContext _context;

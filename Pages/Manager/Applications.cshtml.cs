@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace PRAKTOSWEBAPI.Pages.Manager
 {
-    [Authorize(Policy = "Manager")]
+    [Authorize(Policy = "ManagerOrAdmin")]
     public class ApplicationsModel : PageModel
     {
         private readonly ApplicationDbContext _context;

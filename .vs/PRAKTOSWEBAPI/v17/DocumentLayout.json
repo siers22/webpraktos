@@ -3,12 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\controllers\\telegrambotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:controllers\\telegrambotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\services\\telegramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:services\\telegramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\services\\itelegramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:services\\itelegramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\hubs\\telegramhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:hubs\\telegramhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\pages\\manager\\specialties.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:pages\\manager\\specialties.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\pages\\manager\\applications.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:pages\\manager\\applications.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\pages\\manager\\applications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:pages\\manager\\applications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\pages\\student\\profile.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:pages\\student\\profile.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\pages\\student\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:pages\\student\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\pages\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -27,10 +79,6 @@
       "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\pages\\student\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:pages\\student\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -43,24 +91,8 @@
       "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\services\\itelegramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:services\\itelegramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\praktoswebapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:praktoswebapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\services\\telegramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:services\\telegramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\migrations\\20251208164052_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -83,10 +115,6 @@
       "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|c:\\users\\pece\\documents\\gitprojects\\praktika\\praktoswebapi\\models\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4C23B95-0903-43C2-AA96-094DDB60EC06}|PRAKTOSWEBAPI.csproj|solutionrelative:models\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -106,7 +134,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -150,71 +178,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TELEGRAM_SETUP.md",
-              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\TELEGRAM_SETUP.md",
-              "RelativeDocumentMoniker": "TELEGRAM_SETUP.md",
-              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\TELEGRAM_SETUP.md",
-              "RelativeToolTip": "TELEGRAM_SETUP.md",
-              "ViewState": "AgIAAEEAAAAAAAAAAADwv1oAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-12-12T10:24:08.466Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAcwDkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T10:20:28.81Z",
+              "WhenOpened": "2025-12-12T17:05:05.264Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Profile.cshtml",
-              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\Student\\Profile.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Student\\Profile.cshtml",
-              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\Student\\Profile.cshtml",
-              "RelativeToolTip": "Pages\\Student\\Profile.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-12T10:17:08.731Z",
+              "WhenOpened": "2025-12-12T17:05:03.354Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\Admin\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Admin\\Dashboard.cshtml",
-              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\Admin\\Dashboard.cshtml",
-              "RelativeToolTip": "Pages\\Admin\\Dashboard.cshtml",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-12T09:59:39.303Z",
+              "DocumentIndex": 3,
+              "Title": "TelegramBotController.cs",
+              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Controllers\\TelegramBotController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TelegramBotController.cs",
+              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Controllers\\TelegramBotController.cs",
+              "RelativeToolTip": "Controllers\\TelegramBotController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAowEYAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T16:18:01.855Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Specialties.cshtml",
-              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\Manager\\Specialties.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Manager\\Specialties.cshtml",
-              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\Manager\\Specialties.cshtml",
-              "RelativeToolTip": "Pages\\Manager\\Specialties.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-12T10:16:33.12Z"
+              "Title": "TelegramHub.cs",
+              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Hubs\\TelegramHub.cs",
+              "RelativeDocumentMoniker": "Hubs\\TelegramHub.cs",
+              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Hubs\\TelegramHub.cs",
+              "RelativeToolTip": "Hubs\\TelegramHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T16:12:08.437Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
+              "Title": "Specialties.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\Manager\\Specialties.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Manager\\Specialties.cshtml.cs",
+              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\Manager\\Specialties.cshtml.cs",
+              "RelativeToolTip": "Pages\\Manager\\Specialties.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T15:23:22.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Applications.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\Manager\\Applications.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Manager\\Applications.cshtml.cs",
+              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\Manager\\Applications.cshtml.cs",
+              "RelativeToolTip": "Pages\\Manager\\Applications.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T15:18:38.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Profile.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\Student\\Profile.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Student\\Profile.cshtml.cs",
+              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\Student\\Profile.cshtml.cs",
+              "RelativeToolTip": "Pages\\Student\\Profile.cshtml.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAADwv0UAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T15:12:14.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Applications.cshtml",
               "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\Manager\\Applications.cshtml",
               "RelativeDocumentMoniker": "Pages\\Manager\\Applications.cshtml",
@@ -227,7 +282,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
+              "Title": "TelegramService.cs",
+              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Services\\TelegramService.cs",
+              "RelativeDocumentMoniker": "Services\\TelegramService.cs",
+              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Services\\TelegramService.cs",
+              "RelativeToolTip": "Services\\TelegramService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAYwC8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T17:35:43.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAAFAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T14:26:32.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-05T15:14:15.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ITelegramService.cs",
+              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Services\\ITelegramService.cs",
+              "RelativeDocumentMoniker": "Services\\ITelegramService.cs",
+              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Services\\ITelegramService.cs",
+              "RelativeToolTip": "Services\\ITelegramService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T06:26:06.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAADwv4UAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T16:32:21.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\Student\\Profile.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Student\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\Student\\Profile.cshtml",
+              "RelativeToolTip": "Pages\\Student\\Profile.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-12T10:17:08.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\_Layout.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAIBJwCcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-12T09:57:38.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml",
@@ -235,37 +381,77 @@
               "RelativeToolTip": "Pages\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-12T10:13:24.701Z"
+              "WhenOpened": "2025-12-12T10:13:24.701Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Pages\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\_Layout.cshtml",
-              "RelativeToolTip": "Pages\\_Layout.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAACcAAAAgAAAAAAAAAA==",
+              "DocumentIndex": 20,
+              "Title": "Specialties.cshtml",
+              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\Manager\\Specialties.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Manager\\Specialties.cshtml",
+              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\Manager\\Specialties.cshtml",
+              "RelativeToolTip": "Pages\\Manager\\Specialties.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-12T09:57:38.662Z",
+              "WhenOpened": "2025-12-12T10:16:33.12Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAiwDIAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Admin\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\Admin\\Dashboard.cshtml",
+              "RelativeToolTip": "Pages\\Admin\\Dashboard.cshtml",
+              "ViewState": "AgIAAEIAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-12T09:59:39.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wBUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T14:26:32.541Z",
+              "WhenOpened": "2025-12-05T14:30:23.549Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 18,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T10:20:28.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TELEGRAM_SETUP.md",
+              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\TELEGRAM_SETUP.md",
+              "RelativeDocumentMoniker": "TELEGRAM_SETUP.md",
+              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\TELEGRAM_SETUP.md",
+              "RelativeToolTip": "TELEGRAM_SETUP.md",
+              "ViewState": "AgIAAEEAAAAAAAAAAADwv1oAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-12T10:24:08.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Pages\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Pages\\_ViewStart.cshtml",
@@ -273,59 +459,25 @@
               "RelativeToolTip": "Pages\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-12T10:17:05.669Z"
+              "WhenOpened": "2025-12-12T10:17:05.669Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAA3wJIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T16:32:21.592Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ITelegramService.cs",
-              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Services\\ITelegramService.cs",
-              "RelativeDocumentMoniker": "Services\\ITelegramService.cs",
-              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Services\\ITelegramService.cs",
-              "RelativeToolTip": "Services\\ITelegramService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T06:26:06.276Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-05T15:14:15.918Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 25,
               "Title": "Applicant.cs",
               "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Models\\Applicant.cs",
               "RelativeDocumentMoniker": "Models\\Applicant.cs",
               "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Models\\Applicant.cs",
               "RelativeToolTip": "Models\\Applicant.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwCgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T14:28:50.623Z"
+              "WhenOpened": "2025-12-05T14:28:50.623Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 26,
               "Title": "IEmailService.cs",
               "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Services\\IEmailService.cs",
               "RelativeDocumentMoniker": "Services\\IEmailService.cs",
@@ -333,23 +485,25 @@
               "RelativeToolTip": "Services\\IEmailService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T16:41:55.24Z"
+              "WhenOpened": "2025-12-05T16:41:55.24Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 24,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
               "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Models\\User.cs",
               "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T14:28:27.923Z"
+              "WhenOpened": "2025-12-05T14:28:27.923Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "20251208164052_init.cs",
               "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Migrations\\20251208164052_init.cs",
               "RelativeDocumentMoniker": "Migrations\\20251208164052_init.cs",
@@ -357,47 +511,25 @@
               "RelativeToolTip": "Migrations\\20251208164052_init.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T16:40:54.668Z"
+              "WhenOpened": "2025-12-08T16:40:54.668Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 22,
               "Title": "PRAKTOSWEBAPI.csproj",
               "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\PRAKTOSWEBAPI.csproj",
               "RelativeDocumentMoniker": "PRAKTOSWEBAPI.csproj",
               "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\PRAKTOSWEBAPI.csproj",
               "RelativeToolTip": "PRAKTOSWEBAPI.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-05T16:31:26.942Z"
+              "WhenOpened": "2025-12-05T16:31:26.942Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "TelegramService.cs",
-              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Services\\TelegramService.cs",
-              "RelativeDocumentMoniker": "Services\\TelegramService.cs",
-              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Services\\TelegramService.cs",
-              "RelativeToolTip": "Services\\TelegramService.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T17:35:43.946Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T14:30:23.549Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 27,
               "Title": "EmailService.cs",
               "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Services\\EmailService.cs",
               "RelativeDocumentMoniker": "Services\\EmailService.cs",
@@ -405,11 +537,12 @@
               "RelativeToolTip": "Services\\EmailService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T16:35:13.439Z"
+              "WhenOpened": "2025-12-05T16:35:13.439Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 28,
               "Title": "Application.cs",
               "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Models\\Application.cs",
               "RelativeDocumentMoniker": "Models\\Application.cs",
@@ -417,11 +550,12 @@
               "RelativeToolTip": "Models\\Application.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAxwAsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T14:30:02.788Z"
+              "WhenOpened": "2025-12-05T14:30:02.788Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 29,
               "Title": "Document.cs",
               "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Models\\Document.cs",
               "RelativeDocumentMoniker": "Models\\Document.cs",
@@ -429,11 +563,12 @@
               "RelativeToolTip": "Models\\Document.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T14:29:35.395Z"
+              "WhenOpened": "2025-12-05T14:29:35.395Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 30,
               "Title": "Specialty.cs",
               "DocumentMoniker": "C:\\Users\\PECE\\Documents\\GITPROJECTS\\praktika\\PRAKTOSWEBAPI\\Models\\Specialty.cs",
               "RelativeDocumentMoniker": "Models\\Specialty.cs",
@@ -441,7 +576,8 @@
               "RelativeToolTip": "Models\\Specialty.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T14:29:16.318Z"
+              "WhenOpened": "2025-12-05T14:29:16.318Z",
+              "EditorCaption": ""
             }
           ]
         }
