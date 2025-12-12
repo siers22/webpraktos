@@ -35,9 +35,8 @@
                         }
                         <div class="nav-user">
                             <span><i class="fas fa-user-circle"></i> @User.Identity?.Name</span>
-                            <a asp-page="/Account/Logout" class="nav-link"
-                               style="background:none;border:none;color:var(--text-primary);cursor:pointer;padding:0.5rem 1rem;">
-                                Выход
+                            <a href="/logout" class="nav-link" style="...">
+                                <i class="fas fa-sign-out-alt"></i> Выход
                             </a>
                         </div>
                     }
