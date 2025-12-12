@@ -21,6 +21,7 @@ namespace PRAKTOSWEBAPI.Models
 
         public bool IsConfirmed { get; set; } = false; // Подтверждена ли регистрация через Telegram
 
+        public string? TempPassword { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 }

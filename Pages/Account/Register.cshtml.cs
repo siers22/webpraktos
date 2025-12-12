@@ -50,7 +50,7 @@ namespace PRAKTOSWEBAPI.Pages.Account
                 {
                     TelegramId = Input.TelegramId,
                     Username = Input.Username,
-                    Password = Input.Password,
+                    //Password = Input.Password,
                     FullName = Input.FullName,
                     PassportNumber = Input.PassportNumber,
                     EducationLevel = Input.EducationLevel,
@@ -98,9 +98,9 @@ namespace PRAKTOSWEBAPI.Pages.Account
         [Required(ErrorMessage = "Логин обязателен")]
         public string Username { get; set; } = string.Empty;
 
-        [Required(ErrorMessage = "Пароль обязателен")]
-        [MinLength(6, ErrorMessage = "Пароль должен быть не менее 6 символов")]
-        public string Password { get; set; } = string.Empty;
+        //[Required(ErrorMessage = "Пароль обязателен")]
+        //[MinLength(6, ErrorMessage = "Пароль должен быть не менее 6 символов")]
+        //public string Password { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "ФИО обязательно")]
         public string FullName { get; set; } = string.Empty;

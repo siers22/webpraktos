@@ -28,42 +28,39 @@ namespace PRAKTOSWEBAPI.Controllers
         }
 
         [HttpPost("register-applicant")]
-        public async Task<IActionResult> RegisterApplicant([FromBody] RegisterModel model)
+        public async Task<IActionResult> RegisterApplicant([FromBody] RegisterModelNoPassword model)
         {
-            // Валидация (TelegramId уникальный?)
+            // Проверка TelegramId
             var existingUser = await _context.Users.FirstOrDefaultAsync(u => u.TelegramId == model.TelegramId);
             if (existingUser != null)
             {
-                return BadRequest(new { 
-                    error = "TelegramId already exists", 
+                return BadRequest(new
+                {
+                    error = "TelegramId already exists",
                     message = $"Пользователь с Telegram ID {model.TelegramId} уже зарегистрирован.",
                     username = existingUser.Username,
                     isConfirmed = existingUser.IsConfirmed
                 });
             }
 
-            // Валидация Username (если не указан, генерируем автоматически)
-            var username = string.IsNullOrWhiteSpace(model.Username) 
-                ? $"applicant_{model.TelegramId}" 
+            var username = string.IsNullOrWhiteSpace(model.Username)
+                ? $"user_{model.TelegramId}"
                 : model.Username;
 
-            // Проверяем уникальность Username
             if (await _context.Users.AnyAsync(u => u.Username == username))
-            {
-                return BadRequest(new { 
-                    error = "Username already exists", 
-                    message = $"Логин '{username}' уже занят. Выберите другой."
-                });
-            }
+                return BadRequest(new { error = "Username taken", message = "Логин занят" });
 
-            // Создаем неподтвержденного пользователя
+            // ГЕНЕРИРУЕМ КРАСИВЫЙ ПАРОЛЬ (8-12 символов)
+            var generatedPassword = GenerateSecurePassword(); // ← метод ниже
+
             var user = new User
             {
                 TelegramId = model.TelegramId,
                 Username = username,
                 Role = "Applicant",
-                PasswordHash = BCrypt.Net.BCrypt.HashPassword(model.Password),
-                IsConfirmed = false // Не подтвержден до обращения к боту
+                PasswordHash = BCrypt.Net.BCrypt.HashPassword(generatedPassword),
+                IsConfirmed = false,
+                TempPassword = generatedPassword // ← временно сохраняем в БД (зашифруем потом)
             };
 
             _context.Users.Add(user);
@@ -83,26 +80,17 @@ namespace PRAKTOSWEBAPI.Controllers
                 SpecialtyId = model.SpecialtyId
             };
             applicant.CalculateAverageScore();
-
             _context.Applicants.Add(applicant);
             await _context.SaveChangesAsync();
 
-            
-            var app = new Application
-            {
-                Id = applicant.Id,
-                ApplicantId = applicant.Id,
-                Status = "Pending"
-            };
+            var app = new Application { Id = applicant.Id, ApplicantId = applicant.Id, Status = "Pending" };
             _context.Applications.Add(app);
             await _context.SaveChangesAsync();
 
-            return Ok(new { 
-                message = "Заявка на регистрацию создана. Подтвердите регистрацию, написав боту в Telegram.",
-                username = user.Username,
-                telegramId = model.TelegramId,
-                isConfirmed = false,
-                note = "Напишите боту в Telegram с вашего аккаунта для подтверждения регистрации"
+            return Ok(new
+            {
+                message = "Заявка подана! Напиши боту в Telegram — пришлю тебе пароль для входа.",
+                username = user.Username
             });
         }
 
@@ -155,27 +143,36 @@ namespace PRAKTOSWEBAPI.Controllers
             var token = new JwtSecurityToken(claims: claims, expires: DateTime.Now.AddHours(1), signingCredentials: creds);
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
-    }
 
-    public class RegisterModel
-    {
-        public long TelegramId { get; set; }
-        public string Username { get; set; } // Логин, который указывает студент
-        public string Password { get; set; }
-        public string FullName { get; set; }
-        public string PassportNumber { get; set; }
-        public string EducationLevel { get; set; }
-        public int Grade1 { get; set; }
-        public int Grade2 { get; set; }
-        public int Grade3 { get; set; }
-        public int Grade4 { get; set; }
-        public int Grade5 { get; set; }
-        public int SpecialtyId { get; set; }
-    }
 
-    public class LoginModel
-    {
-        public string Username { get; set; } 
-        public string Password { get; set; }
+        public class RegisterModelNoPassword
+        {
+            public long TelegramId { get; set; }
+            public string? Username { get; set; }
+            public string FullName { get; set; } = null!;
+            public string PassportNumber { get; set; } = null!;
+            public string EducationLevel { get; set; } = null!;
+            public int Grade1 { get; set; }
+            public int Grade2 { get; set; }
+            public int Grade3 { get; set; }
+            public int Grade4 { get; set; }
+            public int Grade5 { get; set; }
+            public int SpecialtyId { get; set; }
+        }
+        private string GenerateSecurePassword(int length = 10)
+        {
+            const string valid = "abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789!@#$%";
+            var res = new StringBuilder();
+            var rnd = Random.Shared;
+            while (res.Length < length)
+                res.Append(valid[rnd.Next(valid.Length)]);
+            return res.ToString();
+        }
+
+        public class LoginModel
+        {
+            public string Username { get; set; }
+            public string Password { get; set; }
+        }
     }
 }

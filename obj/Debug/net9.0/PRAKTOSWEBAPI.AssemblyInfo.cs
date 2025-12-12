@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PRAKTOSWEBAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0a8569c03833654b4e12a21e0f32a5ae73ee2cf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db00e2a2af130ae9a6486252af2fe7e1dca11583")]
 [assembly: System.Reflection.AssemblyProductAttribute("PRAKTOSWEBAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PRAKTOSWEBAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
